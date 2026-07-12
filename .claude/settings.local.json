@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "mcp__plugin_supabase_supabase__list_projects",
+      "mcp__plugin_supabase_supabase__list_tables",
+      "mcp__plugin_supabase_supabase__get_project",
+      "mcp__plugin_supabase_supabase__execute_sql",
+      "mcp__plugin_supabase_supabase__get_advisors",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s \"http://localhost:3000/api/search/suggestions?q=aug\")",
+      "Bash(npx ts-node *)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl -s \"http://localhost:3001/api/search/suggestions?q=panadol\")",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(curl -s http://localhost:3000/api/search/suggestions?q=panadol)",
+      "Bash(curl -s \"http://localhost:3000/api/search/suggestions?q=panadol\")",
+      "Bash(taskkill /PID 17388 /F)",
+      "Bash(wmic process *)",
+      "Bash(curl -s \"http://localhost:3000/api/search/suggestions?q=augmentin\")",
+      "Bash(taskkill /IM node.exe /F)",
+      "Bash(taskkill /PID 17388 /F /T)",
+      "Bash(curl -s http://localhost:3000/api/search/suggestions?q=augmentin)",
+      "Bash(curl *)",
+      "Bash(xargs grep -l \"price_records\\\\|medicine_compositions\")"
+    ]
+  }
+}
