@@ -17,10 +17,15 @@ const fetchFromOverpass = async (lat: number, lng: number, radius: number): Prom
   `;
   const url = `https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`;
 
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
+
   const res = await fetch(url, {
     next: { revalidate: 3600 }, // cache 1 hour at edge
-    signal: AbortSignal.timeout(15000), // 15s timeout
+    signal: controller.signal,
   });
+
+  clearTimeout(timeoutId);
 
   if (!res.ok) throw new Error("Overpass API returned " + res.status);
 

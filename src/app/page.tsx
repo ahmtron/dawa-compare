@@ -42,7 +42,7 @@ export default function Home() {
               </div>
 
               {/* Search Bar - Hero CTA */}
-              <div className="w-full pt-2 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <div className="w-full pt-2 pb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
                 <SearchBar />
               </div>
 

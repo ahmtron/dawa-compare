@@ -77,7 +77,7 @@ export function SearchBar() {
   };
 
   return (
-    <form ref={wrapperRef} onSubmit={handleSearch} className="relative w-full max-w-2xl mx-auto flex flex-col z-50">
+    <form ref={wrapperRef} onSubmit={handleSearch} className="relative w-full max-w-2xl mx-auto flex flex-col">
       <div className="relative flex items-center shadow-lg rounded-full overflow-hidden bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors duration-300">
         <div className="absolute left-4 text-slate-400 dark:text-slate-500">
           <Search className="w-5 h-5" />
