@@ -105,7 +105,7 @@ export function SearchBar() {
 
       {/* Suggestions Dropdown - Only render after mount */}
       {isMounted && showSuggestions && query.trim().length >= 2 && (
-        <div className="absolute top-full mt-2 w-full bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden z-50 transition-colors duration-300">
+        <div className="mt-2 w-full bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden transition-colors duration-300">
           {isLoadingSuggestions && suggestions.length === 0 ? (
             <div className="p-4 text-center text-slate-500 dark:text-slate-400 text-sm flex items-center justify-center gap-2">
               <Loader2 className="w-4 h-4 animate-spin" /> Loading suggestions...
